@@ -8,13 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		72607E052A70403B009E59F9 /* CashBudApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E042A70403B009E59F9 /* CashBudApp.swift */; };
-		72607E072A70403B009E59F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E062A70403B009E59F9 /* ContentView.swift */; };
-		72607E092A70403B009E59F9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E082A70403B009E59F9 /* Item.swift */; };
+		72607E092A70403B009E59F9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E082A70403B009E59F9 /* Transaction.swift */; };
 		72607E0B2A704040009E59F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72607E0A2A704040009E59F9 /* Assets.xcassets */; };
 		72607E0E2A704040009E59F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72607E0D2A704040009E59F9 /* Preview Assets.xcassets */; };
 		72607E1A2A704041009E59F9 /* CashBudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E192A704041009E59F9 /* CashBudTests.swift */; };
 		72607E242A704041009E59F9 /* CashBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E232A704041009E59F9 /* CashBudUITests.swift */; };
 		72607E262A704041009E59F9 /* CashBudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E252A704041009E59F9 /* CashBudUITestsLaunchTests.swift */; };
+		72607E342A7108F6009E59F9 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E332A7108F6009E59F9 /* OverviewView.swift */; };
+		72607E362A710A9C009E59F9 /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E352A710A9C009E59F9 /* OverviewViewModel.swift */; };
+		72607E402A753F0B009E59F9 /* LocalPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E3F2A753F0B009E59F9 /* LocalPersistenceService.swift */; };
+		72607E422A77E0AE009E59F9 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E412A77E0AE009E59F9 /* TransactionsListView.swift */; };
+		72607E442A77E4ED009E59F9 /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E432A77E4ED009E59F9 /* TransactionsListViewModel.swift */; };
+		72C980702A78FAE900499D90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9806F2A78FAE900499D90 /* Constants.swift */; };
+		72C980722A78FF0C00499D90 /* TransactionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980712A78FF0C00499D90 /* TransactionsManager.swift */; };
+		72C980742A792A0900499D90 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980732A792A0900499D90 /* ChartView.swift */; };
+		72C980802A7A73D000499D90 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9807F2A7A73D000499D90 /* ChartViewModel.swift */; };
+		72C980842A7E42AA00499D90 /* TransactionCreationProcessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980832A7E42AA00499D90 /* TransactionCreationProcessModel.swift */; };
+		72C9808D2A7FC09F00499D90 /* CreateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9808C2A7FC09F00499D90 /* CreateTransactionView.swift */; };
+		72C9808F2A7FC62F00499D90 /* CreateTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9808E2A7FC62F00499D90 /* CreateTransactionViewModel.swift */; };
+		72C980912A80EBA600499D90 /* CBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980902A80EBA600499D90 /* CBButton.swift */; };
+		72C980962A816E8300499D90 /* ErrorOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980952A816E8300499D90 /* ErrorOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +50,7 @@
 /* Begin PBXFileReference section */
 		72607E012A70403B009E59F9 /* CashBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72607E042A70403B009E59F9 /* CashBudApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBudApp.swift; sourceTree = "<group>"; };
-		72607E062A70403B009E59F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		72607E082A70403B009E59F9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		72607E082A70403B009E59F9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		72607E0A2A704040009E59F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72607E0D2A704040009E59F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72607E0F2A704040009E59F9 /* CashBud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CashBud.entitlements; sourceTree = "<group>"; };
@@ -48,6 +60,20 @@
 		72607E1F2A704041009E59F9 /* CashBudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashBudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72607E232A704041009E59F9 /* CashBudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBudUITests.swift; sourceTree = "<group>"; };
 		72607E252A704041009E59F9 /* CashBudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBudUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72607E332A7108F6009E59F9 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		72607E352A710A9C009E59F9 /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
+		72607E3F2A753F0B009E59F9 /* LocalPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPersistenceService.swift; sourceTree = "<group>"; };
+		72607E412A77E0AE009E59F9 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		72607E432A77E4ED009E59F9 /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
+		72C9806F2A78FAE900499D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		72C980712A78FF0C00499D90 /* TransactionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManager.swift; sourceTree = "<group>"; };
+		72C980732A792A0900499D90 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		72C9807F2A7A73D000499D90 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		72C980832A7E42AA00499D90 /* TransactionCreationProcessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCreationProcessModel.swift; sourceTree = "<group>"; };
+		72C9808C2A7FC09F00499D90 /* CreateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionView.swift; sourceTree = "<group>"; };
+		72C9808E2A7FC62F00499D90 /* CreateTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewModel.swift; sourceTree = "<group>"; };
+		72C980902A80EBA600499D90 /* CBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBButton.swift; sourceTree = "<group>"; };
+		72C980952A816E8300499D90 /* ErrorOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				72607E042A70403B009E59F9 /* CashBudApp.swift */,
-				72607E062A70403B009E59F9 /* ContentView.swift */,
-				72607E082A70403B009E59F9 /* Item.swift */,
+				72C9806F2A78FAE900499D90 /* Constants.swift */,
+				72C980822A7E427A00499D90 /* Model */,
+				72C9809C2A81783C00499D90 /* Views */,
+				72607E322A7065E0009E59F9 /* Scenes */,
+				72C980812A7AE42000499D90 /* Manager */,
+				72607E3E2A74FCFE009E59F9 /* Service */,
 				72607E0A2A704040009E59F9 /* Assets.xcassets */,
 				72607E0F2A704040009E59F9 /* CashBud.entitlements */,
 				72607E102A704040009E59F9 /* Info.plist */,
@@ -134,6 +164,87 @@
 			path = CashBudUITests;
 			sourceTree = "<group>";
 		};
+		72607E322A7065E0009E59F9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				72C9809A2A8177E500499D90 /* Charts */,
+				72C980992A8177D900499D90 /* Overview */,
+				72C980982A8177BD00499D90 /* TransactionsList */,
+				72C980972A8177AF00499D90 /* CreateTransaction */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		72607E3E2A74FCFE009E59F9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				72607E3F2A753F0B009E59F9 /* LocalPersistenceService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		72C980812A7AE42000499D90 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				72C980712A78FF0C00499D90 /* TransactionsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		72C980822A7E427A00499D90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72C980832A7E42AA00499D90 /* TransactionCreationProcessModel.swift */,
+				72607E082A70403B009E59F9 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72C980972A8177AF00499D90 /* CreateTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				72C9808E2A7FC62F00499D90 /* CreateTransactionViewModel.swift */,
+				72C9808C2A7FC09F00499D90 /* CreateTransactionView.swift */,
+			);
+			path = CreateTransaction;
+			sourceTree = "<group>";
+		};
+		72C980982A8177BD00499D90 /* TransactionsList */ = {
+			isa = PBXGroup;
+			children = (
+				72607E432A77E4ED009E59F9 /* TransactionsListViewModel.swift */,
+				72607E412A77E0AE009E59F9 /* TransactionsListView.swift */,
+			);
+			path = TransactionsList;
+			sourceTree = "<group>";
+		};
+		72C980992A8177D900499D90 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				72607E352A710A9C009E59F9 /* OverviewViewModel.swift */,
+				72607E332A7108F6009E59F9 /* OverviewView.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		72C9809A2A8177E500499D90 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				72C9807F2A7A73D000499D90 /* ChartViewModel.swift */,
+				72C980732A792A0900499D90 /* ChartView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		72C9809C2A81783C00499D90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72C980902A80EBA600499D90 /* CBButton.swift */,
+				72C980952A816E8300499D90 /* ErrorOverlay.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +261,8 @@
 			dependencies = (
 			);
 			name = CashBud;
+			packageProductDependencies = (
+			);
 			productName = CashBud;
 			productReference = 72607E012A70403B009E59F9 /* CashBud.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +335,8 @@
 				Base,
 			);
 			mainGroup = 72607DF82A70403B009E59F9;
+			packageReferences = (
+			);
 			productRefGroup = 72607E022A70403B009E59F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,9 +379,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72607E072A70403B009E59F9 /* ContentView.swift in Sources */,
-				72607E092A70403B009E59F9 /* Item.swift in Sources */,
+				72607E422A77E0AE009E59F9 /* TransactionsListView.swift in Sources */,
+				72607E442A77E4ED009E59F9 /* TransactionsListViewModel.swift in Sources */,
+				72C9808F2A7FC62F00499D90 /* CreateTransactionViewModel.swift in Sources */,
+				72C980802A7A73D000499D90 /* ChartViewModel.swift in Sources */,
+				72C980742A792A0900499D90 /* ChartView.swift in Sources */,
+				72607E092A70403B009E59F9 /* Transaction.swift in Sources */,
 				72607E052A70403B009E59F9 /* CashBudApp.swift in Sources */,
+				72C9808D2A7FC09F00499D90 /* CreateTransactionView.swift in Sources */,
+				72607E362A710A9C009E59F9 /* OverviewViewModel.swift in Sources */,
+				72C980912A80EBA600499D90 /* CBButton.swift in Sources */,
+				72C980722A78FF0C00499D90 /* TransactionsManager.swift in Sources */,
+				72C980962A816E8300499D90 /* ErrorOverlay.swift in Sources */,
+				72C980842A7E42AA00499D90 /* TransactionCreationProcessModel.swift in Sources */,
+				72607E342A7108F6009E59F9 /* OverviewView.swift in Sources */,
+				72607E402A753F0B009E59F9 /* LocalPersistenceService.swift in Sources */,
+				72C980702A78FAE900499D90 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

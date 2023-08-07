@@ -12,9 +12,12 @@ import SwiftData
 struct CashBudApp: App {
 
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            
+            NavigationStack {
+                OverviewView()
+            }
         }
-        .modelContainer(for: Item.self)
     }
 }
