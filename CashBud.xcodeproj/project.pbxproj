@@ -130,7 +130,6 @@
 				72C9806F2A78FAE900499D90 /* Constants.swift */,
 				72C980822A7E427A00499D90 /* Model */,
 				7292D36B2A9F924F006BA2AE /* Mapper */,
-				7292D36C2A9F9266006BA2AE /* TransactionMapper.swift */,
 				72C9809C2A81783C00499D90 /* Views */,
 				72607E322A7065E0009E59F9 /* Scenes */,
 				72C980812A7AE42000499D90 /* Manager */,
@@ -190,6 +189,7 @@
 		7292D36B2A9F924F006BA2AE /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				7292D36C2A9F9266006BA2AE /* TransactionMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
