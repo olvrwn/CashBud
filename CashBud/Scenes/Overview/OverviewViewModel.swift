@@ -56,10 +56,16 @@ final class OverviewViewModel: ObservableObject {
                 switch transaction.type {
                     
                 case .expense:
-                    self.expenses += transaction.costs
+                    self.expenses += self.transactionsManager.calculateMonthlyCosts(
+                        recurrence: transaction.recurrence,
+                        costs: transaction.costs
+                    )
                     
                 case .revenue:
-                    self.revenue += transaction.costs
+                    self.revenue += self.transactionsManager.calculateMonthlyCosts(
+                        recurrence: transaction.recurrence,
+                        costs: transaction.costs
+                    )
                 }
             }
         } catch {

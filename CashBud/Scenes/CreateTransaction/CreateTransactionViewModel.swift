@@ -20,13 +20,15 @@ final class CreateTransactionViewModel: ObservableObject {
     // MARK: - Private Properties
     
     private let transactionsManager = TransactionsManager()
+    private let transactionMapper = TransactionMapper()
     
     //MARK: - Functions
     
-    func writeTransaction(transaction: Transaction) {
+    func addNewTransaction(transaction: TransactionCreationProcessModel) {
         
         do {
             
+            let transaction = try self.transactionMapper.map(self.transaction)
             let transactions = self.readTransactions()
             try self.transactionsManager.writeToDocumentsDirectory(into: Constants.filename, data: transactions + [transaction])
         } catch {

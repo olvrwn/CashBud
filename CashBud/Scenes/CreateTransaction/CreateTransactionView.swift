@@ -116,20 +116,7 @@ extension CreateTransactionView {
         
         return Button {
             
-            guard
-                let type = self.viewModel.transaction.type,
-                let category = self.viewModel.transaction.category,
-                let recurrence = self.viewModel.transaction.recurrence,
-                let costs = self.viewModel.transaction.costs else {
-                return
-            }
-            self.viewModel.writeTransaction(transaction: Transaction(
-                type: type,
-                category: category,
-                recurrence: recurrence,
-                title: self.viewModel.transaction.title,
-                costs: type == .expense ? -costs : costs
-            ))
+            self.viewModel.addNewTransaction(transaction: self.viewModel.transaction)
             self.dismiss()
         } label: {
             Text("Add transaction")
