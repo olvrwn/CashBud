@@ -18,7 +18,16 @@
 		72607E422A77E0AE009E59F9 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E412A77E0AE009E59F9 /* TransactionsListView.swift */; };
 		72607E442A77E4ED009E59F9 /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E432A77E4ED009E59F9 /* TransactionsListViewModel.swift */; };
 		7292D36D2A9F9266006BA2AE /* TransactionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D36C2A9F9266006BA2AE /* TransactionMapper.swift */; };
+		7292D3762AA32C9E006BA2AE /* LocalPersistenceServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3752AA32C9E006BA2AE /* LocalPersistenceServiceTest.swift */; };
+		7292D3782AA32E27006BA2AE /* LocalPersistenceServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3772AA32E27006BA2AE /* LocalPersistenceServiceMock.swift */; };
+		7292D37A2AA32EE8006BA2AE /* TransactionsManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3792AA32EE8006BA2AE /* TransactionsManagerTest.swift */; };
+		7292D37C2AA32F14006BA2AE /* CreateTransactionViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D37B2AA32F14006BA2AE /* CreateTransactionViewModelTest.swift */; };
+		7292D37E2AA32F24006BA2AE /* TransactionsListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D37D2AA32F24006BA2AE /* TransactionsListViewModelTest.swift */; };
+		7292D3802AA32F32006BA2AE /* OverviewViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D37F2AA32F32006BA2AE /* OverviewViewModelTest.swift */; };
+		7292D3822AA32F3F006BA2AE /* ChartViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3812AA32F3F006BA2AE /* ChartViewModelTest.swift */; };
+		7292D3842AA33118006BA2AE /* TransactionsManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3832AA33118006BA2AE /* TransactionsManagerMock.swift */; };
 		7292D3872AA38783006BA2AE /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3862AA38783006BA2AE /* DummyData.swift */; };
+		7292D38A2AA4D401006BA2AE /* TransactionMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3892AA4D401006BA2AE /* TransactionMapperTest.swift */; };
 		72C980702A78FAE900499D90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9806F2A78FAE900499D90 /* Constants.swift */; };
 		72C980722A78FF0C00499D90 /* TransactionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980712A78FF0C00499D90 /* TransactionsManager.swift */; };
 		72C980742A792A0900499D90 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980732A792A0900499D90 /* ChartView.swift */; };
@@ -56,7 +65,16 @@
 		72607E412A77E0AE009E59F9 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
 		72607E432A77E4ED009E59F9 /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
 		7292D36C2A9F9266006BA2AE /* TransactionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionMapper.swift; sourceTree = "<group>"; };
+		7292D3752AA32C9E006BA2AE /* LocalPersistenceServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPersistenceServiceTest.swift; sourceTree = "<group>"; };
+		7292D3772AA32E27006BA2AE /* LocalPersistenceServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPersistenceServiceMock.swift; sourceTree = "<group>"; };
+		7292D3792AA32EE8006BA2AE /* TransactionsManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManagerTest.swift; sourceTree = "<group>"; };
+		7292D37B2AA32F14006BA2AE /* CreateTransactionViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewModelTest.swift; sourceTree = "<group>"; };
+		7292D37D2AA32F24006BA2AE /* TransactionsListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModelTest.swift; sourceTree = "<group>"; };
+		7292D37F2AA32F32006BA2AE /* OverviewViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelTest.swift; sourceTree = "<group>"; };
+		7292D3812AA32F3F006BA2AE /* ChartViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModelTest.swift; sourceTree = "<group>"; };
+		7292D3832AA33118006BA2AE /* TransactionsManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManagerMock.swift; sourceTree = "<group>"; };
 		7292D3862AA38783006BA2AE /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		7292D3892AA4D401006BA2AE /* TransactionMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionMapperTest.swift; sourceTree = "<group>"; };
 		72C9806F2A78FAE900499D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72C980712A78FF0C00499D90 /* TransactionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManager.swift; sourceTree = "<group>"; };
 		72C980732A792A0900499D90 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
@@ -135,7 +153,8 @@
 		72607E182A704041009E59F9 /* CashBudTests */ = {
 			isa = PBXGroup;
 			children = (
-				72607E192A704041009E59F9 /* CashBudTests.swift */,
+				7292D36F2AA32C16006BA2AE /* Mocks */,
+				7292D36E2AA32C0D006BA2AE /* Tests */,
 			);
 			path = CashBudTests;
 			sourceTree = "<group>";
@@ -167,12 +186,83 @@
 			path = Mapper;
 			sourceTree = "<group>";
 		};
+		7292D36E2AA32C0D006BA2AE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3882AA4D3E5006BA2AE /* Mapper */,
+				7292D3722AA32C42006BA2AE /* ViewModels */,
+				7292D3712AA32C37006BA2AE /* Managers */,
+				7292D3702AA32C21006BA2AE /* Services */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7292D36F2AA32C16006BA2AE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3742AA32C6A006BA2AE /* Managers */,
+				7292D3732AA32C61006BA2AE /* Services */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		7292D3702AA32C21006BA2AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3752AA32C9E006BA2AE /* LocalPersistenceServiceTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7292D3712AA32C37006BA2AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3792AA32EE8006BA2AE /* TransactionsManagerTest.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7292D3722AA32C42006BA2AE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3812AA32F3F006BA2AE /* ChartViewModelTest.swift */,
+				7292D37F2AA32F32006BA2AE /* OverviewViewModelTest.swift */,
+				7292D37D2AA32F24006BA2AE /* TransactionsListViewModelTest.swift */,
+				7292D37B2AA32F14006BA2AE /* CreateTransactionViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7292D3732AA32C61006BA2AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3772AA32E27006BA2AE /* LocalPersistenceServiceMock.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7292D3742AA32C6A006BA2AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3832AA33118006BA2AE /* TransactionsManagerMock.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		7292D3852AA33A73006BA2AE /* DummyData */ = {
 			isa = PBXGroup;
 			children = (
 				7292D3862AA38783006BA2AE /* DummyData.swift */,
 			);
 			path = DummyData;
+			sourceTree = "<group>";
+		};
+		7292D3882AA4D3E5006BA2AE /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3892AA4D401006BA2AE /* TransactionMapperTest.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 		72C980812A7AE42000499D90 /* Manager */ = {
