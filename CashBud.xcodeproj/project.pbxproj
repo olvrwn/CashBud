@@ -12,8 +12,6 @@
 		72607E0B2A704040009E59F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72607E0A2A704040009E59F9 /* Assets.xcassets */; };
 		72607E0E2A704040009E59F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72607E0D2A704040009E59F9 /* Preview Assets.xcassets */; };
 		72607E1A2A704041009E59F9 /* CashBudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E192A704041009E59F9 /* CashBudTests.swift */; };
-		72607E242A704041009E59F9 /* CashBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E232A704041009E59F9 /* CashBudUITests.swift */; };
-		72607E262A704041009E59F9 /* CashBudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E252A704041009E59F9 /* CashBudUITestsLaunchTests.swift */; };
 		72607E342A7108F6009E59F9 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E332A7108F6009E59F9 /* OverviewView.swift */; };
 		72607E362A710A9C009E59F9 /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E352A710A9C009E59F9 /* OverviewViewModel.swift */; };
 		72607E402A753F0B009E59F9 /* LocalPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E3F2A753F0B009E59F9 /* LocalPersistenceService.swift */; };
@@ -40,13 +38,6 @@
 			remoteGlobalIDString = 72607E002A70403B009E59F9;
 			remoteInfo = CashBud;
 		};
-		72607E202A704041009E59F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 72607DF92A70403B009E59F9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72607E002A70403B009E59F9;
-			remoteInfo = CashBud;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -59,9 +50,6 @@
 		72607E102A704040009E59F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72607E152A704041009E59F9 /* CashBudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashBudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72607E192A704041009E59F9 /* CashBudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBudTests.swift; sourceTree = "<group>"; };
-		72607E1F2A704041009E59F9 /* CashBudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashBudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72607E232A704041009E59F9 /* CashBudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBudUITests.swift; sourceTree = "<group>"; };
-		72607E252A704041009E59F9 /* CashBudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBudUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		72607E332A7108F6009E59F9 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		72607E352A710A9C009E59F9 /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
 		72607E3F2A753F0B009E59F9 /* LocalPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPersistenceService.swift; sourceTree = "<group>"; };
@@ -95,13 +83,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72607E1C2A704041009E59F9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,7 +91,6 @@
 			children = (
 				72607E032A70403B009E59F9 /* CashBud */,
 				72607E182A704041009E59F9 /* CashBudTests */,
-				72607E222A704041009E59F9 /* CashBudUITests */,
 				72607E022A70403B009E59F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,7 +100,6 @@
 			children = (
 				72607E012A70403B009E59F9 /* CashBud.app */,
 				72607E152A704041009E59F9 /* CashBudTests.xctest */,
-				72607E1F2A704041009E59F9 /* CashBudUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,15 +138,6 @@
 				72607E192A704041009E59F9 /* CashBudTests.swift */,
 			);
 			path = CashBudTests;
-			sourceTree = "<group>";
-		};
-		72607E222A704041009E59F9 /* CashBudUITests */ = {
-			isa = PBXGroup;
-			children = (
-				72607E232A704041009E59F9 /* CashBudUITests.swift */,
-				72607E252A704041009E59F9 /* CashBudUITestsLaunchTests.swift */,
-			);
-			path = CashBudUITests;
 			sourceTree = "<group>";
 		};
 		72607E322A7065E0009E59F9 /* Scenes */ = {
@@ -307,24 +277,6 @@
 			productReference = 72607E152A704041009E59F9 /* CashBudTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		72607E1E2A704041009E59F9 /* CashBudUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72607E2F2A704041009E59F9 /* Build configuration list for PBXNativeTarget "CashBudUITests" */;
-			buildPhases = (
-				72607E1B2A704041009E59F9 /* Sources */,
-				72607E1C2A704041009E59F9 /* Frameworks */,
-				72607E1D2A704041009E59F9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72607E212A704041009E59F9 /* PBXTargetDependency */,
-			);
-			name = CashBudUITests;
-			productName = CashBudUITests;
-			productReference = 72607E1F2A704041009E59F9 /* CashBudUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,10 +291,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					72607E142A704040009E59F9 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 72607E002A70403B009E59F9;
-					};
-					72607E1E2A704041009E59F9 = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 72607E002A70403B009E59F9;
 					};
@@ -365,7 +313,6 @@
 			targets = (
 				72607E002A70403B009E59F9 /* CashBud */,
 				72607E142A704040009E59F9 /* CashBudTests */,
-				72607E1E2A704041009E59F9 /* CashBudUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -381,13 +328,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		72607E132A704040009E59F9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72607E1D2A704041009E59F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,15 +370,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72607E1B2A704041009E59F9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72607E242A704041009E59F9 /* CashBudUITests.swift in Sources */,
-				72607E262A704041009E59F9 /* CashBudUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -446,11 +377,6 @@
 			isa = PBXTargetDependency;
 			target = 72607E002A70403B009E59F9 /* CashBud */;
 			targetProxy = 72607E162A704041009E59F9 /* PBXContainerItemProxy */;
-		};
-		72607E212A704041009E59F9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 72607E002A70403B009E59F9 /* CashBud */;
-			targetProxy = 72607E202A704041009E59F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -676,42 +602,6 @@
 			};
 			name = Release;
 		};
-		72607E302A704041009E59F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UB4GRXVX7Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.oliverdieke.CashBudUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CashBud;
-			};
-			name = Debug;
-		};
-		72607E312A704041009E59F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UB4GRXVX7Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.oliverdieke.CashBudUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CashBud;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -738,15 +628,6 @@
 			buildConfigurations = (
 				72607E2D2A704041009E59F9 /* Debug */,
 				72607E2E2A704041009E59F9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		72607E2F2A704041009E59F9 /* Build configuration list for PBXNativeTarget "CashBudUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72607E302A704041009E59F9 /* Debug */,
-				72607E312A704041009E59F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
