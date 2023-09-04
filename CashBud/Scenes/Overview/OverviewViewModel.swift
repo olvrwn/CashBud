@@ -70,6 +70,7 @@ final class OverviewViewModel: ObservableObject {
             }
         } catch {
             
+            print(error)
             self.errorOccured.toggle()
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {

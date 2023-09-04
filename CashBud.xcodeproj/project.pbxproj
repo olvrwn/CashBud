@@ -20,6 +20,7 @@
 		72607E422A77E0AE009E59F9 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E412A77E0AE009E59F9 /* TransactionsListView.swift */; };
 		72607E442A77E4ED009E59F9 /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E432A77E4ED009E59F9 /* TransactionsListViewModel.swift */; };
 		7292D36D2A9F9266006BA2AE /* TransactionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D36C2A9F9266006BA2AE /* TransactionMapper.swift */; };
+		7292D3872AA38783006BA2AE /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292D3862AA38783006BA2AE /* DummyData.swift */; };
 		72C980702A78FAE900499D90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9806F2A78FAE900499D90 /* Constants.swift */; };
 		72C980722A78FF0C00499D90 /* TransactionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980712A78FF0C00499D90 /* TransactionsManager.swift */; };
 		72C980742A792A0900499D90 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C980732A792A0900499D90 /* ChartView.swift */; };
@@ -67,6 +68,7 @@
 		72607E412A77E0AE009E59F9 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
 		72607E432A77E4ED009E59F9 /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
 		7292D36C2A9F9266006BA2AE /* TransactionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionMapper.swift; sourceTree = "<group>"; };
+		7292D3862AA38783006BA2AE /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		72C9806F2A78FAE900499D90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72C980712A78FF0C00499D90 /* TransactionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManager.swift; sourceTree = "<group>"; };
 		72C980732A792A0900499D90 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				72607E042A70403B009E59F9 /* CashBudApp.swift */,
 				72C9806F2A78FAE900499D90 /* Constants.swift */,
+				7292D3852AA33A73006BA2AE /* DummyData */,
 				72C980822A7E427A00499D90 /* Model */,
 				7292D36B2A9F924F006BA2AE /* Mapper */,
 				72C9809C2A81783C00499D90 /* Views */,
@@ -192,6 +195,14 @@
 				7292D36C2A9F9266006BA2AE /* TransactionMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		7292D3852AA33A73006BA2AE /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				7292D3862AA38783006BA2AE /* DummyData.swift */,
+			);
+			path = DummyData;
 			sourceTree = "<group>";
 		};
 		72C980812A7AE42000499D90 /* Manager */ = {
@@ -402,6 +413,7 @@
 				72C980912A80EBA600499D90 /* CBButton.swift in Sources */,
 				72C980722A78FF0C00499D90 /* TransactionsManager.swift in Sources */,
 				72C980962A816E8300499D90 /* ErrorOverlay.swift in Sources */,
+				7292D3872AA38783006BA2AE /* DummyData.swift in Sources */,
 				72C980842A7E42AA00499D90 /* TransactionCreationProcessModel.swift in Sources */,
 				72607E342A7108F6009E59F9 /* OverviewView.swift in Sources */,
 				7292D36D2A9F9266006BA2AE /* TransactionMapper.swift in Sources */,

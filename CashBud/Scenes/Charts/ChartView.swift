@@ -36,7 +36,7 @@ struct ChartView: View {
         }
         .padding()
         .onAppear {
-            self.viewModel.fetchAndSortTransactions()
+            self.viewModel.fetchAndDivideTransactions()
         }
         .overlay {
             ErrorOverlay(errorOccured: self.$viewModel.errorOccured)
