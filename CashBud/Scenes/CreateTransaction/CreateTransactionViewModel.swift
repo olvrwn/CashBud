@@ -19,8 +19,14 @@ final class CreateTransactionViewModel: ObservableObject {
     
     // MARK: - Private Properties
     
-    private let transactionsManager = TransactionsManager()
+    private let transactionsManager: TransactionsManagerProtocol
     private let transactionMapper = TransactionMapper()
+    
+    // MARK: - Init
+    
+    init(transactionsmanager: TransactionsManagerProtocol = TransactionsManager()) {
+        self.transactionsManager = transactionsmanager
+    }
     
     //MARK: - Functions
     
@@ -28,11 +34,12 @@ final class CreateTransactionViewModel: ObservableObject {
         
         do {
             
-            let transaction = try self.transactionMapper.map(self.transaction)
+            let transaction = try self.transactionMapper.map(transaction)
             let transactions = self.readTransactions()
             try self.transactionsManager.writeToDocumentsDirectory(into: Constants.filename, data: transactions + [transaction])
         } catch {
             
+            print(error)
             self.errorOccured.toggle()
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {
@@ -48,6 +55,7 @@ final class CreateTransactionViewModel: ObservableObject {
             return try self.transactionsManager.readFromDocumentsDirectory(from: Constants.filename)
         } catch {
             
+            print(error)
             self.errorOccured.toggle()
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {

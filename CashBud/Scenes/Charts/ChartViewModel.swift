@@ -50,7 +50,7 @@ final class ChartViewModel: ObservableObject {
     
     // MARK: - Functions
     
-    func fetchAndSortTransactions() {
+    func fetchAndDivideTransactions() {
         
         do {
             
@@ -68,6 +68,7 @@ final class ChartViewModel: ObservableObject {
             self.formatTransactions()
         } catch {
             
+            print(error)
             self.errorOccured.toggle()
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {

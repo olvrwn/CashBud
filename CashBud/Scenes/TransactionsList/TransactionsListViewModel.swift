@@ -65,9 +65,10 @@ final class TransactionsListViewModel: ObservableObject {
                     transaction.type == .revenue || transaction.type == .expense
                 }
             }
-            self.transactions.sort(by: { $0.costs > $1.costs })
+            self.transactions = self.transactionsManager.sortTransactions(self.transactions)
         } catch {
             
+            print(error)
             self.errorOccured.toggle()
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {
@@ -86,9 +87,12 @@ final class TransactionsListViewModel: ObservableObject {
         for i in index {
             
             do {
+                
                 try self.transactionsManager.delete(id: self.transactions[i].id)
+                self.getTransactions()
             } catch {
                 
+                print(error)
                 self.errorOccured.toggle()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     withAnimation {
@@ -97,7 +101,6 @@ final class TransactionsListViewModel: ObservableObject {
                 }
             }
         }
-        self.getTransactions()
     }
     
     func calculateCostsPerMonth(for transaction: Transaction) -> Double {
