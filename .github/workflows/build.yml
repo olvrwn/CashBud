@@ -2,9 +2,7 @@ name: Build
 on:
   push:
     branches:
-      - unit-testing/manual
-	  - unit-testing/Sweep
-	  - unit-testing/Codeium
+      - develop
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
