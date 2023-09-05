@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720F90F12AA7576D0001725B /* ChartViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90ED2AA7576D0001725B /* ChartViewModelTest.swift */; };
+		720F90F22AA7576D0001725B /* TransactionsListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90EE2AA7576D0001725B /* TransactionsListViewModelTest.swift */; };
+		720F90F32AA7576D0001725B /* OverviewViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90EF2AA7576D0001725B /* OverviewViewModelTest.swift */; };
+		720F90F42AA7576D0001725B /* CreateTransactionViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90F02AA7576D0001725B /* CreateTransactionViewModelTest.swift */; };
+		720F90F62AA7578A0001725B /* LocalPersistenceServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90F52AA7578A0001725B /* LocalPersistenceServiceTest.swift */; };
+		720F90F82AA7579C0001725B /* TransactionMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90F72AA7579C0001725B /* TransactionMapperTest.swift */; };
+		720F90FA2AA757AA0001725B /* TransactionsManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90F92AA757AA0001725B /* TransactionsManagerTest.swift */; };
+		720F90FC2AA757B80001725B /* TransactionsManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90FB2AA757B80001725B /* TransactionsManagerMock.swift */; };
+		720F90FE2AA757C40001725B /* LocalPersistenceServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F90FD2AA757C40001725B /* LocalPersistenceServiceMock.swift */; };
 		72607E052A70403B009E59F9 /* CashBudApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E042A70403B009E59F9 /* CashBudApp.swift */; };
 		72607E092A70403B009E59F9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72607E082A70403B009E59F9 /* Transaction.swift */; };
 		72607E0B2A704040009E59F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72607E0A2A704040009E59F9 /* Assets.xcassets */; };
@@ -41,6 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		720F90ED2AA7576D0001725B /* ChartViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewModelTest.swift; sourceTree = "<group>"; };
+		720F90EE2AA7576D0001725B /* TransactionsListViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModelTest.swift; sourceTree = "<group>"; };
+		720F90EF2AA7576D0001725B /* OverviewViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewModelTest.swift; sourceTree = "<group>"; };
+		720F90F02AA7576D0001725B /* CreateTransactionViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewModelTest.swift; sourceTree = "<group>"; };
+		720F90F52AA7578A0001725B /* LocalPersistenceServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPersistenceServiceTest.swift; sourceTree = "<group>"; };
+		720F90F72AA7579C0001725B /* TransactionMapperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionMapperTest.swift; sourceTree = "<group>"; };
+		720F90F92AA757AA0001725B /* TransactionsManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsManagerTest.swift; sourceTree = "<group>"; };
+		720F90FB2AA757B80001725B /* TransactionsManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsManagerMock.swift; sourceTree = "<group>"; };
+		720F90FD2AA757C40001725B /* LocalPersistenceServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPersistenceServiceMock.swift; sourceTree = "<group>"; };
 		72607E012A70403B009E59F9 /* CashBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72607E042A70403B009E59F9 /* CashBudApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBudApp.swift; sourceTree = "<group>"; };
 		72607E082A70403B009E59F9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
@@ -86,6 +104,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720F90E52AA757050001725B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				720F90E72AA757110001725B /* Services */,
+				720F90E62AA7570B0001725B /* Managers */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		720F90E62AA7570B0001725B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				720F90FB2AA757B80001725B /* TransactionsManagerMock.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		720F90E72AA757110001725B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				720F90FD2AA757C40001725B /* LocalPersistenceServiceMock.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		720F90E82AA757170001725B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				720F90EC2AA757420001725B /* Mappers */,
+				720F90EB2AA7573B0001725B /* Managers */,
+				720F90EA2AA757360001725B /* Services */,
+				720F90E92AA7572E0001725B /* ViewModels */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		720F90E92AA7572E0001725B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				720F90ED2AA7576D0001725B /* ChartViewModelTest.swift */,
+				720F90F02AA7576D0001725B /* CreateTransactionViewModelTest.swift */,
+				720F90EF2AA7576D0001725B /* OverviewViewModelTest.swift */,
+				720F90EE2AA7576D0001725B /* TransactionsListViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		720F90EA2AA757360001725B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				720F90F52AA7578A0001725B /* LocalPersistenceServiceTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		720F90EB2AA7573B0001725B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				720F90F92AA757AA0001725B /* TransactionsManagerTest.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		720F90EC2AA757420001725B /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				720F90F72AA7579C0001725B /* TransactionMapperTest.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 		72607DF82A70403B009E59F9 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +224,8 @@
 		72607E182A704041009E59F9 /* CashBudTests */ = {
 			isa = PBXGroup;
 			children = (
+				720F90E52AA757050001725B /* Mocks */,
+				720F90E82AA757170001725B /* Tests */,
 				72607E192A704041009E59F9 /* CashBudTests.swift */,
 			);
 			path = CashBudTests;
@@ -366,7 +457,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720F90F82AA7579C0001725B /* TransactionMapperTest.swift in Sources */,
+				720F90F22AA7576D0001725B /* TransactionsListViewModelTest.swift in Sources */,
+				720F90FC2AA757B80001725B /* TransactionsManagerMock.swift in Sources */,
+				720F90FE2AA757C40001725B /* LocalPersistenceServiceMock.swift in Sources */,
+				720F90F62AA7578A0001725B /* LocalPersistenceServiceTest.swift in Sources */,
+				720F90F42AA7576D0001725B /* CreateTransactionViewModelTest.swift in Sources */,
+				720F90FA2AA757AA0001725B /* TransactionsManagerTest.swift in Sources */,
+				720F90F32AA7576D0001725B /* OverviewViewModelTest.swift in Sources */,
 				72607E1A2A704041009E59F9 /* CashBudTests.swift in Sources */,
+				720F90F12AA7576D0001725B /* ChartViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
