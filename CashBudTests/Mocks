@@ -1,0 +1,29 @@
+// CashBudTests/Mocks/Managers/TransactionsManagerMock.swift
+
+import CashBud
+
+final class TransactionsManagerMock: TransactionsManagerProtocol {
+    // Variables for each function in the protocol
+    var getTransactionsResult: Result<[Transaction], Error>?
+    var addTransactionResult: Result<Void, Error>?
+    var deleteTransactionResult: Result<Void, Error>?
+    
+    // Mock implementations for each function
+    func getTransactions(completion: @escaping (Result<[Transaction], Error>) -> Void) {
+        if let result = getTransactionsResult {
+            completion(result)
+        }
+    }
+    
+    func addTransaction(_ transaction: Transaction, completion: @escaping (Result<Void, Error>) -> Void) {
+        if let result = addTransactionResult {
+            completion(result)
+        }
+    }
+    
+    func deleteTransaction(withID id: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        if let result = deleteTransactionResult {
+            completion(result)
+        }
+    }
+}
