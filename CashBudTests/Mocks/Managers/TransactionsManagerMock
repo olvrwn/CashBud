@@ -1,0 +1,9 @@
+import Foundation
+
+protocol TransactionsManagerProtocol {
+    // Define the required functions and properties here
+}
+
+class TransactionsManagerMock: TransactionsManagerProtocol {
+    // Implement the required functions here
+}
