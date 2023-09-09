@@ -1,0 +1,19 @@
+import Foundation
+@testable import CashBud
+
+class TransactionsManagerMock: TransactionsManagerProtocol {
+    // Implement all functions defined in the TransactionsManagerProtocol
+    func getAllTransactions(completion: @escaping ([Transaction]) -> Void) {
+        // Implementation for getAllTransactions function
+    }
+    
+    func addTransaction(_ transaction: Transaction, completion: @escaping (Result<Void, Error>) -> Void) {
+        // Implementation for addTransaction function
+    }
+    
+    func deleteTransaction(withID id: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        // Implementation for deleteTransaction function
+    }
+    
+    // Implement other functions defined in the TransactionsManagerProtocol
+}
