@@ -1,0 +1,7 @@
+CashBudTests/Mocks/Managers/TransactionsManagerMock
+
+import Foundation
+
+class TransactionsManagerMock: TransactionsManagerProtocol {
+    // Implement mock functions here
+}
