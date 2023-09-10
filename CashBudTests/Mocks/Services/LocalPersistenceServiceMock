@@ -1,0 +1,6 @@
+import Foundation
+@testable import CashBud
+
+class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
+    // Implement all functions according to the protocol
+}
