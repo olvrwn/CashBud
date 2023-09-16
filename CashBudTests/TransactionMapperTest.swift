@@ -17,7 +17,7 @@ class TransactionMapperTest: XCTestCase {
     func testMapTransaction() {
         // Test case for mapping a transaction
         let transaction = Transaction(id: "1", amount: 10.0, date: Date())
-        let mappedTransaction = transactionMapper.mapTransaction(transaction)
+        let mappedTransaction = transactionMapper.mapTransaction(from: transaction)
         
         XCTAssertEqual(mappedTransaction.id, "1")
         XCTAssertEqual(mappedTransaction.amount, 10.0)
@@ -30,4 +30,10 @@ class TransactionMapperTest: XCTestCase {
         ("testMapTransaction", testMapTransaction),
         // Add more test cases here
     ]
+}
+
+extension TransactionMapper {
+    func mapTransaction(from transaction: Transaction) -> MappedTransaction {
+        // Implementation of mapTransaction method
+    }
 }
