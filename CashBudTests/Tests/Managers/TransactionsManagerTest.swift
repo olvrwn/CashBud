@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import XCTest
+@testable import CashBud
+
+final class TransactionsManagerTest: XCTestCase {
+    
+}
