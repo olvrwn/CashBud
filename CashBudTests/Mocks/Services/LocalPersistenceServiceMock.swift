@@ -1,13 +1,3 @@
-//
-//  LocalPersistenceServiceMock.swift
-//  CashBudTests
-//
-//  Created by Oliver Dieke on 10.09.23.
-//
-
-import Foundation
-@testable import CashBud
-
 final class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
     
     var writeToDocumentsDirectoryResult: Result<Void, Error>?
