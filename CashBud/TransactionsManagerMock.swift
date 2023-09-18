@@ -1,7 +1,37 @@
-import Foundation
-
 class TransactionsManagerMock: TransactionsManagerProtocol {
+    func fetchTransactions() {
+    }
     
+    func addTransaction(_ transaction: Transaction) {
+    }
+    
+    func deleteTransaction(withID id: String) {
+    }
+    
+    func updateTransaction(_ transaction: Transaction) {
+    }
+    
+    func searchTransactions(withKeyword keyword: String) {
+    }
+    
+    func getTransaction(withID id: String) {
+    }
+    
+    func getTransactionCount() {
+    }
+    
+    func getTransactionTotal() {
+    }
+    
+    func getTransactionAverage() {
+    }
+    
+    func getTransactionMinimum() {
+    }
+    
+    func getTransactionMaximum() {
+    }
+```
     func fetchTransactions(completion: @escaping (Result<[Transaction], Error>) -> Void) {
         // Implementation goes here
         let result: Result<[Transaction], Error> = .success([])
