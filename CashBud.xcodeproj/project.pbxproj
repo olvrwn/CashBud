@@ -91,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E2D7122AADA37D007C4F57 /* LocalPersistenceServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E2D7122AADA37D007C4F57 /* LocalPersistenceServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +452,7 @@
 				7292D36D2A9F9266006BA2AE /* TransactionMapper.swift in Sources */,
 				72607E402A753F0B009E59F9 /* LocalPersistenceService.swift in Sources */,
 				72C980702A78FAE900499D90 /* Constants.swift in Sources */,
+				72E2D7122AADA37D007C4F57 /* LocalPersistenceServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
