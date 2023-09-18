@@ -1,0 +1,14 @@
+//
+//  TransactionsManagerMock.swift
+//  CashBudTests
+//
+//  Created by Oliver Dieke on 10.09.23.
+//
+
+import Foundation
+@testable import CashBud
+
+class TransactionsManagerMock: TransactionsManager {
+    // Override the required methods and properties of TransactionsManager here
+    // to provide the desired behavior for testing
+}
