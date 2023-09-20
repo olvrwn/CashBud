@@ -6,18 +6,6 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
         // Implementation goes here
     }
     
-    func createTransaction(_ transaction: Transaction, completion: @escaping (Result<Void, Error>) -> Void) {
-        // Implementation goes here
-    }
-    
-    func updateTransaction(_ transaction: Transaction, completion: @escaping (Result<Void, Error>) -> Void) {
-        // Implementation goes here
-    }
-    
-    func deleteTransaction(_ transaction: Transaction, completion: @escaping (Result<Void, Error>) -> Void) {
-        // Implementation goes here
-    }
-    
     func fetchCategories(completion: @escaping (Result<[Category], Error>) -> Void) {
         // Implementation goes here
     }
