@@ -68,11 +68,11 @@ final class TransactionsManagerMock: TransactionsManagerProtocol {
     }
     
     func sortTransactions(_ transactions: [CashBud.Transaction]) -> [CashBud.Transaction] {
-    
-        guard let response = self.sortTransactionResponse else {
+        if let response = self.sortTransactionResponse {
+            return response
+        } else {
             fatalError("sortTransactionsResponse not set")
         }
-        return response
     }
     
     func getIconString(transactionCategory: CashBud.TransactionCategory) -> String {
