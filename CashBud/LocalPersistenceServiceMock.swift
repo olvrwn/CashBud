@@ -1,4 +1,5 @@
 import Foundation
+import LocalPersistenceServiceMock+Result
 
 class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
     var result: Result<Any, Error>?
