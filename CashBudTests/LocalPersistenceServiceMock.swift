@@ -22,9 +22,5 @@ class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
         UserDefaults.standard.removeObject(forKey: key)
     }
     
-    func removeAllData() {
-        // Implement removeAllData function
-        // Remove all data from local storage
-        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
-    }
+    // Remove the removeAllData function as it is not mentioned in the LocalPersistenceServiceProtocol.
 }
