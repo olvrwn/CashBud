@@ -11,8 +11,8 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     // Implement every function of the TransactionsManagerProtocol
     
     // Add necessary imports
-    
-    import Foundation
+    import XCTest
+    @testable import CashBud
     
     // Implement the TransactionsManagerMock class that conforms to the TransactionsManagerProtocol
     
@@ -20,11 +20,9 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
         
         // Implement every function of the TransactionsManagerProtocol
         
-    }
-}
-    
-    func readFromDocumentsDirectory<T: Codable>(from filename: String) throws -> T {
-        // Implement code here
+        func readFromDocumentsDirectory<T: Codable>(from filename: String) throws -> T {
+            // Implement code here
+        }
     }
     
     func writeToDocumentsDirectory(into filename: String, data: some Codable) throws {
