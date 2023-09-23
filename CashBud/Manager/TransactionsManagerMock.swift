@@ -12,10 +12,14 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     func readFromDocumentsDirectory<T: Codable>(from filename: String) throws -> T {
         // Implement code here
+        // TODO: Implement the body of the readFromDocumentsDirectory function
+        // Add your implementation here
     }
     
     func writeToDocumentsDirectory(into filename: String, data: some Codable) throws {
         // Implement code here
+        // TODO: Implement the body of the writeToDocumentsDirectory function
+        // Add your implementation here
     }
     
     func delete(id: UUID) throws {
@@ -23,6 +27,7 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
         // TODO: Implement the body of the delete function
         // You can use the id parameter to identify and delete the transaction
         // Add your implementation here
+    }
     }
     func calculateMonthlyCosts(recurrence: TransactionRecurrence, costs: Double) -> Double {
         // Implement code here
