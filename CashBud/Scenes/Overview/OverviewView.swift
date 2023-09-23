@@ -45,6 +45,7 @@ struct OverviewView: View {
         }
         .onAppear {
             self.viewModel.calculateValues()
+            print("OverviewView appeared")
         }
         .sheet(isPresented: self.$isSheetShown) {
             
