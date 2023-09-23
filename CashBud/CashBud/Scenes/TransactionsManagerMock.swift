@@ -12,15 +12,19 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     func calculateMonthlyCosts(recurrence: Recurrence, costs: Double) -> Double {
         // Mock implementation for calculating monthly costs
         // Add the function body
-        if recurrence == .success {
-            return costs
-        } else {
-            return 0
-        }
+        return 0
+    }
+    
+    func functionName1() {
+        // Add mock implementation for functionName1
+    }
+    
+    func functionName2() {
+        // Add mock implementation for functionName2
     }
     
     // Add other required functions and properties of TransactionsManagerProtocol with mock implementations
     
     // Use the Transaction model to create mock data for testing purposes
     
-}
+    }
