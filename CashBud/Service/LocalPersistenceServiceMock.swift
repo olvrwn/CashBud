@@ -1,7 +1,5 @@
 CashBud/Service/LocalPersistenceServiceMock.swift
 
-// Import necessary modules
-
 // Implement LocalPersistenceServiceMock class
 class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
     // Implement functions of the protocol
