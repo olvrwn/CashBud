@@ -10,23 +10,18 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     // Implement every function of the TransactionsManagerProtocol
     
-    // Add necessary imports
-    import XCTest
-    @testable import CashBud
-    
-    // Implement the TransactionsManagerMock class that conforms to the TransactionsManagerProtocol
-    
-    class TransactionsManagerMock: TransactionsManagerProtocol {
-        
-        // Implement every function of the TransactionsManagerProtocol
-        
-        func readFromDocumentsDirectory<T: Codable>(from filename: String) throws -> T {
-            // Implement code here
-        }
+    func readFromDocumentsDirectory<T: Codable>(from filename: String) throws -> T {
+        // Implement code here
     }
     
     func writeToDocumentsDirectory(into filename: String, data: some Codable) throws {
         // Implement code here
+        // COMMENT: implement the body
+        // Add code to write data to the specified filename in the documents directory
+        let encoder = JSONEncoder()
+        let encodedData = try encoder.encode(data)
+        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(filename)
+        try encodedData.write(to: fileURL)
     }
     
     func delete(id: UUID) throws {
