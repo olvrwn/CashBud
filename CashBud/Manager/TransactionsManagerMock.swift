@@ -20,25 +20,16 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     func delete(id: UUID) throws {
         // Implement code here
+        // TODO: Implement the body of the delete function
+        // You can use the id parameter to identify and delete the transaction
+        // Add your implementation here
     }
-    
     func calculateMonthlyCosts(recurrence: TransactionRecurrence, costs: Double) -> Double {
         // Implement code here
-        switch recurrence {
-        case .daily:
-            return costs * 30
-        case .weekly:
-            return costs * 4
-        case .monthly:
-            return costs
-        case .yearly:
-            return costs / 12
-        }
     }
     
     func sortTransactions(_ transactions: [Transaction]) -> [Transaction] {
         // Implement code here
-        return transactions.sorted { $0.date < $1.date }
     }
     
     func getIconString(transactionCategory: TransactionCategory) -> String {
@@ -51,9 +42,11 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
         case .transportation:
             return "🚗"
         case .entertainment:
-            return "🎥"
+            return "🎉"
         case .utilities:
             return "💡"
+        case .other:
+            return "💸"
         }
     }
     
@@ -61,4 +54,4 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     // Implement every function to either return successfully if the variable for that function was set accordingly or to throw or return the set error
     
-}
+    }
