@@ -30,6 +30,7 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     func sortTransactions(_ transactions: [Transaction]) -> [Transaction] {
         // Implement code here
+        return transactions.sorted { $0.date > $1.date }
     }
     
     func getIconString(transactionCategory: TransactionCategory) -> String {
@@ -38,6 +39,17 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
         case .food:
             return "🍔"
         case .shopping:
+            return "🛍️"
+        case .transportation:
+            return "🚗"
+        case .entertainment:
+            return "🎉"
+        case .utilities:
+            return "💡"
+        case .other:
+            return "💸"
+        }
+    }
             return "🛍️"
         case .transportation:
             return "🚗"
