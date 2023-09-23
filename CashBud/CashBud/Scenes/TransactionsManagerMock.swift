@@ -5,6 +5,7 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     func readFromDocumentsDirectory(from filename: String) throws -> [Transaction] {
         // Mock implementation for reading transactions from the documents directory
+        // Add the function body
         return []
     }
     
