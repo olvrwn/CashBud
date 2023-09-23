@@ -34,7 +34,7 @@ final class OverviewViewModel: ObservableObject {
     
     // MARK: - Init
     
-    init(transactionsManager: TransactionsManagerProtocol = TransactionsManager()) {
+    init(transactionsManager: TransactionsManagerProtocol = TransactionsManagerMock()) {
         self.transactionsManager = transactionsManager
     }
     
