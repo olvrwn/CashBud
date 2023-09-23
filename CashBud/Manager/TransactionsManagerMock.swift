@@ -16,12 +16,6 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     func writeToDocumentsDirectory(into filename: String, data: some Codable) throws {
         // Implement code here
-        // COMMENT: implement the body
-        // Add code to write data to the specified filename in the documents directory
-        let encoder = JSONEncoder()
-        let encodedData = try encoder.encode(data)
-        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(filename)
-        try encodedData.write(to: fileURL)
     }
     
     func delete(id: UUID) throws {
@@ -38,10 +32,24 @@ class TransactionsManagerMock: TransactionsManagerProtocol {
     
     func getIconString(transactionCategory: TransactionCategory) -> String {
         // Implement code here
+        switch transactionCategory {
+        case .food:
+            return "🍔"
+        case .shopping:
+            return "🛍️"
+        case .transportation:
+            return "🚗"
+        case .entertainment:
+            return "🎉"
+        case .utilities:
+            return "💡"
+        case .other:
+            return "💸"
+        }
     }
     
     // Add result and response variables for functions that can throw or return an error
     
     // Implement every function to either return successfully if the variable for that function was set accordingly or to throw or return the set error
     
-}
+    }
