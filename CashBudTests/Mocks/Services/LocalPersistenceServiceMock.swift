@@ -18,15 +18,15 @@ class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
         // Simulate success scenario
         return nil
     }
-}
-    }
     
     func deleteData(forKey key: String) {
         // Simulate success scenario
+        // TODO: Implement deleteData method
     }
     
     func clearAllData() {
         // Simulate success scenario
+        // TODO: Implement clearAllData method
     }
     
     func simulateFailure() {
