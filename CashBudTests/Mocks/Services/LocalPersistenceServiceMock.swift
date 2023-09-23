@@ -25,9 +25,7 @@ class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
         // Simulate success scenario
     }
     
-    func clearAllData() {
-        // Simulate success scenario
-    }
+    // COMMENT: Removed the function clearAllData()
     
     // COMMENT: Removed the function simulateFailure()
 }
