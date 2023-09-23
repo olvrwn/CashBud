@@ -52,15 +52,16 @@ final class TransactionsListViewModel: ObservableObject {
         do {
             
             self.transactions = try self.transactionsManager.readFromDocumentsDirectory(from: Constants.filename)
+            print("Hello")
             self.transactions = transactions.filter { transaction in
-                
+                            
                 switch self.transactionsListScreenType {
                 case .expenses:
                     transaction.type == .expense
-                    
+                                
                 case .revenue:
                     transaction.type == .revenue
-                    
+                                
                 case .sum:
                     transaction.type == .revenue || transaction.type == .expense
                 }
