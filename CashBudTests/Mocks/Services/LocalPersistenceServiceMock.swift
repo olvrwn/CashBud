@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class LocalPersistenceServiceMock {
+    // TODO: Implement mock methods for local persistence service
+}
