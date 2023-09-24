@@ -24,12 +24,12 @@ class TransactionsManagerTest: XCTestCase {
     
     func testReadFromDocumentsDirectory() {
         // Test reading from documents directory
+        // Implement the test
         // ...
     }
     
     func testCalculateMonthlyCosts() {
         // Test calculating monthly costs
-        // Implement the test here
         // ...
     }
     
