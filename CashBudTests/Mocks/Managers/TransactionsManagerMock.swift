@@ -18,16 +18,19 @@ final class TransactionsManagerMock: TransactionsManagerProtocol {
     var getIconStringResponse: String?
     
     func readFromDocumentsDirectory<T>(from filename: String) throws -> T where T : Decodable, T : Encodable {
+        guard let result = readFromDocumentsDirectoryResult else {
+            fatalError("readFromDocumentsDirectoryResult not set")
+        }
         
-        switch self.readFromDocumentsDirectoryResult {
+        switch result {
         case .success(let success):
-            return success as! T
+            guard let successValue = success as? T else {
+                fatalError("Invalid success value type")
+            }
+            return successValue
             
         case .failure(let failure):
             throw failure
-            
-        case .none:
-            fatalError("readFromDocumentsDirectoryResult not set")
         }
     }
     
