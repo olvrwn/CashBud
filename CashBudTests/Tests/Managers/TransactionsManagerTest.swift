@@ -5,4 +5,9 @@
 //  Created by Oliver Dieke on 10.09.23.
 //
 
-import Foundation
+import XCTest
+@testable import CashBud
+
+class TransactionsManagerTest: XCTestCase {
+    
+}
