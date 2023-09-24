@@ -29,6 +29,7 @@ class TransactionsManagerTest: XCTestCase {
     
     func testCalculateMonthlyCosts() {
         // Test calculating monthly costs
+        // Implement the test here
         // ...
     }
     
