@@ -27,18 +27,22 @@ class ChartsViewModelTest: XCTestCase {
     
     func testExample() {
         // Test case code
+        // Add your test case code here
     }
     
     func testViewModelInitialization() {
         // Test case code
+        // Add your test case code here
     }
     
     func testViewModelUpdate() {
         // Test case code
+        // Add your test case code here
     }
     
     func testViewModelData() {
         // Test case code
+        // Add your test case code here
     }
     
     // Add more test cases as needed
