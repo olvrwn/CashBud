@@ -14,28 +14,26 @@ final class LocalPersistenceServiceMock: LocalPersistenceServiceProtocol {
     var readFromDocumentsDirectoryResult: Result<[Transaction], Error>?
     
     func writeToDocumentsDirectory<T>(into filename: String, data: T) throws where T: Codable {
-        
         switch self.writeToDocumentsDirectoryResult {
         case .success:
-            return ()
-            
+            return
+    
         case .failure(let failure):
             throw failure
-            
+    
         case .none:
             fatalError("writeToDocumentsDirectoryResult not set")
         }
     }
     
     func readFromDocumentsDirectory<T>(from filename: String) throws -> T where T: Codable {
-        
         switch self.readFromDocumentsDirectoryResult {
         case .success(let success):
             return success as! T
-            
+    
         case .failure(let failure):
             throw failure
-            
+    
         case .none:
             fatalError("readFromDocumentsDirectoryResult not set")
         }
