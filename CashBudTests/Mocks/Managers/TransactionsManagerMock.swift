@@ -19,7 +19,7 @@ final class TransactionsManagerMock: TransactionsManagerProtocol {
     
     func readFromDocumentsDirectory<T>(from filename: String) throws -> T where T : Decodable, T : Encodable {
         guard let result = readFromDocumentsDirectoryResult else {
-            fatalError("readFromDocumentsDirectoryResult not set")
+            fatalError("readFromDocumentsDirectoryResult is nil")
         }
         
         switch result {
@@ -28,58 +28,10 @@ final class TransactionsManagerMock: TransactionsManagerProtocol {
                 fatalError("Invalid success value type")
             }
             return successValue
-            
+        
         case .failure(let failure):
             throw failure
         }
-    }
-    
-    func writeToDocumentsDirectory(into filename: String, data: some Decodable & Encodable) throws {
-        
-        switch self.writeToDocumentsDirectoryResult {
-        case .success:
-            return
-            
-        case .failure(let failure):
-            throw failure
-            
-        case .none:
-            fatalError("writeToDocumentsDirectoryResult not set")
-        }
-    }
-    
-    func delete(id: UUID) throws {
-        
-        switch self.deleteResult {
-        case .success:
-            return
-            
-        case .failure(let failure):
-            throw failure
-            
-        case .none:
-            fatalError("deleteResult not set")
-        }
-    }
-    
-    func calculateMonthlyCosts(recurrence: CashBud.TransactionRecurrence, costs: Double) -> Double {
-        
-        guard let response = self.calculateMonthlyCostsResponse else {
-            fatalError("calculateMonthlyCostsResponse not set")
-        }
-        return response
-    }
-    
-    func sortTransactions(_ transactions: [CashBud.Transaction]) -> [CashBud.Transaction] {
-    
-        guard let response = self.sortTransactionResponse else {
-            fatalError("sortTransactionsResponse not set")
-        }
-        return response
-    }
-    
-    func getIconString(transactionCategory: CashBud.TransactionCategory) -> String {
-        
         guard let response = self.getIconStringResponse else {
             fatalError("getIconString not set")
         }
