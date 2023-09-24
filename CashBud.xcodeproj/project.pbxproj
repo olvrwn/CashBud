@@ -719,6 +719,8 @@
 			buildConfigurations = (
 				72607E2A2A704041009E59F9 /* Debug */,
 				72607E2B2A704041009E59F9 /* Release */,
+				72607E2C2A704041009E59F9 /* Debug */,
+				72607E2D2A704041009E59F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
