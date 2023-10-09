@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import HelloWorldView
 
 @main
 struct CashBudApp: App {
@@ -17,6 +18,7 @@ struct CashBudApp: App {
             
             NavigationStack {
                 OverviewView()
+                HelloWorldView()
             }
         }
     }
