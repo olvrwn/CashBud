@@ -65,8 +65,15 @@ final class TransactionsListViewModel: ObservableObject {
                     transaction.type == .revenue || transaction.type == .expense
                 }
             }
-            self.transactions = self.transactionsManager.sortTransactions(self.transactions)
-        } catch {
+            } catch {
+                print(error)
+                self.errorOccured.toggle()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    withAnimation {
+                        self.errorOccured.toggle()
+                    }
+                }
+            }
             
             print(error)
             self.errorOccured.toggle()
