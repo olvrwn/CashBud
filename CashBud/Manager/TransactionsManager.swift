@@ -44,24 +44,23 @@ final class TransactionsManager: TransactionsManagerProtocol {
         var transactions: [Transaction] = try self.localPersistenceService.readFromDocumentsDirectory(from: Constants.filename)
         transactions.removeAll { transaction in
             transaction.id == id
-        }
-        try self.localPersistenceService.writeToDocumentsDirectory(into: Constants.filename, data: transactions)
-    }
-    
-    func calculateMonthlyCosts(recurrence: TransactionRecurrence, costs: Double) -> Double {
-        
-        switch recurrence {
+        func calculateMonthlyCosts(recurrence: TransactionRecurrence, costs: Double) -> Double {
+            print("Calculating monthly costs...")
+            print("Recurrence: \(recurrence)")
+            print("Costs: \(costs)")
             
-        case .weekly:
-            return costs * 4.35
-        case .monthly:
-            return costs
-        case .quarterly:
-            return costs / 3
-        case .yearly:
-            return costs / 12
+            switch recurrence {
+                
+            case .weekly:
+                return costs * 4.35
+            case .monthly:
+                return costs
+            case .quarterly:
+                return costs / 3
+            case .yearly:
+                return costs / 12
+            }
         }
-    }
     
     func sortTransactions(_ transactions: [Transaction]) -> [Transaction] {
         
