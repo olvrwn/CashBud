@@ -20,13 +20,7 @@ final class OverviewViewModel: ObservableObject {
     @Published
     var expenses: Double = 0
     
-    var sum: Double {
-        revenue + expenses
-    }
-    
-    let revenueTitle = "Revenue"
-    let expensesTitle = "Expenses"
-    let sumTitle = "Sum"
+    // Remove the unfinished code changes
     
     // MARK: - Private Properties
     
