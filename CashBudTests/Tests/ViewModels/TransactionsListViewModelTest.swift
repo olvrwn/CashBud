@@ -32,12 +32,15 @@ class TransactionsListViewModelTest: XCTestCase {
     
     func testGetTransactions() {
         viewModel.getTransactions()
-        XCTAssertEqual(viewModel.transactions, transactionsManager.transactions)
+        let filteredTransactions = transactionsManager.transactions.filter { $0.type == .expense }
+        let sortedTransactions = filteredTransactions.sorted { $0.costs > $1.costs }
+        XCTAssertEqual(viewModel.transactions, sortedTransactions)
     }
     
     func testSortTransactions() {
         viewModel.sortTransactions()
-        XCTAssertEqual(viewModel.transactions, transactionsManager.transactions.sorted())
+        let sortedTransactions = transactionsManager.transactions.sorted { $0.costs > $1.costs }
+        XCTAssertEqual(viewModel.transactions, sortedTransactions)
     }
     
     func testDeleteTransactionAndUpdate() {
@@ -63,8 +66,9 @@ class TransactionsListViewModelTest: XCTestCase {
     }
     
     func testErrorHandling() {
-        viewModel.errorOccured = false
+        transactionsManager.shouldReturnError = true
         viewModel.getTransactions()
         XCTAssertTrue(viewModel.errorOccured)
+        XCTAssertTrue(viewModel.transactions.isEmpty)
     }
 }
