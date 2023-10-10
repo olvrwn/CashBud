@@ -151,14 +151,15 @@
 			sourceTree = "<group>";
 		};
 		72607E182A704041009E59F9 /* CashBudTests */ = {
-			isa = PBXGroup;
-			children = (
-				72E2D7082AADA322007C4F57 /* Mocks */,
-				72E2D7072AADA31E007C4F57 /* Tests */,
-				72607E192A704041009E59F9 /* CashBudTests.swift */,
-			);
-			path = CashBudTests;
-			sourceTree = "<group>";
+		    isa = PBXGroup;
+		    children = (
+		        72E2D7082AADA322007C4F57 /* Mocks */,
+		        72E2D7072AADA31E007C4F57 /* Tests */,
+		        72607E192A704041009E59F9 /* CashBudTests.swift */,
+		        72607E1A2A704041009E59F9 /* TransactionsManagerTest.swift */,
+		    );
+		    path = CashBudTests;
+		    sourceTree = "<group>";
 		};
 		72607E322A7065E0009E59F9 /* Scenes */ = {
 			isa = PBXGroup;
@@ -448,27 +449,32 @@
 				72C980842A7E42AA00499D90 /* TransactionCreationProcessModel.swift in Sources */,
 				72607E342A7108F6009E59F9 /* OverviewView.swift in Sources */,
 				7292D36D2A9F9266006BA2AE /* TransactionMapper.swift in Sources */,
+				72607E1A2A704041009E59F9 /* TransactionsManagerTest.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
 				72607E402A753F0B009E59F9 /* LocalPersistenceService.swift in Sources */,
 				72C980702A78FAE900499D90 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		72607E112A704040009E59F9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72E2D71B2AADA3D5007C4F57 /* CreateTransactionViewModelTest.swift in Sources */,
-				72E2D7142AADA397007C4F57 /* TransactionsManagerTest.swift in Sources */,
-				72E2D7192AADA3C2007C4F57 /* LocalPersistenceServiceTest.swift in Sources */,
-				72E2D71F2AADA3EF007C4F57 /* OverviewViewModelTest.swift in Sources */,
-				72E2D7162AADA3A1007C4F57 /* TransactionMapperTest.swift in Sources */,
-				72E2D7122AADA37D007C4F57 /* LocalPersistenceServiceMock.swift in Sources */,
-				72E2D7232AADA494007C4F57 /* TransactionsManagerMock.swift in Sources */,
-				72E2D7212AADA408007C4F57 /* ChartsViewModelTest.swift in Sources */,
-				72607E1A2A704041009E59F9 /* CashBudTests.swift in Sources */,
-				72E2D71D2AADA3E1007C4F57 /* TransactionsListViewModelTest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		    isa = PBXSourcesBuildPhase;
+		    buildActionMask = 2147483647;
+		    files = (
+		        72E2D71B2AADA3D5007C4F57 /* CreateTransactionViewModelTest.swift in Sources */,
+		        72E2D7142AADA397007C4F57 /* TransactionsManagerTest.swift in Sources */,
+		        72E2D7192AADA3C2007C4F57 /* LocalPersistenceServiceTest.swift in Sources */,
+		        72E2D71F2AADA3EF007C4F57 /* OverviewViewModelTest.swift in Sources */,
+		        72E2D7162AADA3A1007C4F57 /* TransactionMapperTest.swift in Sources */,
+		        72E2D7122AADA37D007C4F57 /* LocalPersistenceServiceMock.swift in Sources */,
+		        72E2D7232AADA494007C4F57 /* TransactionsManagerMock.swift in Sources */,
+		        72E2D7212AADA408007C4F57 /* ChartsViewModelTest.swift in Sources */,
+		        72607E1A2A704041009E59F9 /* CashBudTests.swift in Sources */,
+		        72E2D71D2AADA3E1007C4F57 /* TransactionsListViewModelTest.swift in Sources */,
+		        72607E1A2A704041009E59F9 /* TransactionsManagerTest.swift in Sources */,
+		    );
+		    runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -736,3 +742,28 @@
 	};
 	rootObject = 72607DF92A70403B009E59F9 /* Project object */;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
